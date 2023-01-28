@@ -1,0 +1,163 @@
+footer
+{
+padding: 15px;
+  text-align: center;
+  background: gray;
+  color: white;
+  font-size: 15px;
+  position: absolute;  right: 1%; left: 1%; bottom: -300px;
+}
+
+
+#header
+{
+	
+  padding: 25px;
+  text-align: center;
+  background: gray;
+  color: white;
+  font-size: 20px;
+  margin-left: 150px;
+  margin-top: -10px;
+	
+}
+
+table, thead, td {
+  
+  white-space:nowrap;
+}
+#table1 tr{
+  
+  cursor:pointer; transition: all .25s;
+}
+#table1 tr:hover{
+  
+  background:green;
+}
+
+#nameOfSoftware
+{
+	
+	position: absolute;  right: 50%; left: auto; bottom: 5px;
+	background: #1abc9c;
+	text-align: center;
+}
+#dateNow
+{
+	position: absolute; right: 203px; top: 18px;
+	display: inline-block;
+	
+	
+	
+}
+#tab
+{
+	position: absolute; left: 183px; top: 18px;
+	display: inline-block;
+	
+	
+	
+}
+#user
+{
+	position: absolute; right: 145px;top: 18px;
+	display: inline-block;
+	 
+	
+}
+#name
+{
+	position: absolute; right: 25px;top: 18px;
+	display: inline-block;
+	 
+	
+}
+#filter
+{
+	position: absolute; right: 25px;top: 180px;
+	display: inline-block;
+	 width: 800px;
+	
+}
+#form
+{
+	margin-top: 10px;
+	display:block;
+	font-size: 55px;
+
+}
+input {
+    width: 220px;
+	  
+  padding: 5px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+button[type=button], button[type=reset] {
+  width: 45%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#insertData{
+		position: absolute; left: 175px;top: 70px;
+	width: 300px;
+	
+}
+#userData{
+		position: absolute; left: 610px;top: 70px;
+		width: 880px;
+	
+}
+.nav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.nav a:hover {
+  color: yellow;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 18px;}
+}
+
+fieldset#usersData {
+    position: absolute; top: 250px; left: -75px;
+    padding: 20px;  
+    padding: 5px;
+    height: auto;
+    max-height: 450px;
+    vertical-align: top;
+    overflow-y: auto;
+}
+fieldset#filterData {
+    
+    position: relative; top: -110px; width: 200px; left: -150px;
+}

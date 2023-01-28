@@ -1,0 +1,80 @@
+<!Dokctype HTML>
+<html lang="en">
+<html>
+<head>
+
+<meta http-equiv="refresh" content="1500">
+<link rel="stylesheet" href="style.css">
+<script
+		 defer src="user-date2.js" >
+</script>
+</head>
+<body>
+<div id="header">
+	<div id="user">	
+	User: 	
+	</div>
+		<div id="name" >	
+		</div>
+			<div id="dateNow">	
+			</div>
+				<div id="tab">		
+				Holiday 		
+				</div>
+</div>
+<div class="nav">
+  <a href="#">Holiday request</a>
+  <a href="#">Logout</a>
+</div>
+
+<div id="insertData">
+<fieldset>
+<legend>Insert data</legend>
+<form id="fo" onsubmit="return countingTheNumberOfDays();" >
+<label>User:<label><br>
+<input id="user2" type="text" ><br><br>
+<label>Start date:<label><br>
+<input id="startDate" type="date" oninput="countingTheNumberOfDays()"><br><br>
+<label>End date:<label><br>
+<input id="endDate" type="date" oninput="countingTheNumberOfDays()"><br><br>
+<label>Working days:<label><br>
+<input type="text" id="working" readonly placeholder="Result"><br><br>
+<label>Absence days:<label><br>
+<input type="text" id="holidays" readonly placeholder="Result"><br><br>
+<label for="holiday">Type:</label>
+	<select id="typeOf" onchange="b()">
+		<option value="#">Choose type of leave</option>
+		<option value="#">Holidays</option>
+		<option value="#">Leave on demand</option>
+	</select> <br>
+<input type="text" name="type" id="type" readonly placeholder="Choose type of leave"><br><br>
+<label>Status:<label><br>
+<input type="text" name="accept" id="status" readonly placeholder="To accept" value="To accept"disabled><br><br>
+<button type="button"  onclick="soo1()" >Send</button>
+<button type="reset" value="Reset" >Reset</button><br><br>
+</form>
+</fieldset>
+</div>
+
+<div id="userData" >
+<fieldset>
+<legend>User data</legend> 
+  <table id="table1" cellspacing="1" cellpadding="5" border="1">
+      <tr>
+	    <th>User</th>
+		<th>Date of request / confirm</th>
+        <th>Start date</th>
+        <th>End date</th>
+        <th>Working days</th>
+        <th>Holidays days</th>
+		<th>Type of leave</th>
+		<th>Status</th>
+      </tr>   
+  </table>
+</fieldset>
+</div>
+<footer>
+        <p>© 2023 Company Name</p>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!Dokctype HTML>
+<html lang="en">
+<html>
+<head>
+
+<meta http-equiv="refresh" content="1500">
+<link rel="stylesheet" href="style.css">
+<script
+		 defer src="admin-date2.js" >
+</script>
+</head>
+
+<body>
+<heder>
+<div id="header">
+	<div id="user">	
+	User: 	
+	</div>
+		<div id="name" >		
+		</div>
+			<div id="dateNow">	
+			</div>
+				<div id="tab">
+				Holiday 
+				</div>
+</div>
+
+</heder>
+
+
+<div class="nav">
+  
+  <a href="#">Holiday request</a>
+  <a href="#">Logout</a>
+
+</div>
+
+<div id="insertData">
+<fieldset>
+<legend>Confirm User data</legend>
+<form id="fo" onsubmit="return countingTheNumberOfDays();" >
+<label>User:<label><br>
+<input id="user2" type="text"  disabled><br><br>
+<label>Date of request:<label><br>
+<input id="request" type="text" disabled><br><br>
+<label>Start date:<label>
+<input id="startDate" type="date" oninput="countingTheNumberOfDays()"><br>
+<input id="startDate2" type="text" value="Start date" disabled><br><br>
+<label>End date:<label>
+<input id="endDate" type="date" oninput="countingTheNumberOfDays()"><br>
+<input id="endDate2" type="text" value="End date" disabled><br><br>
+<label>Working days:<label><br>
+<input type="text" id="working" readonly placeholder="Result"disabled><br><br>
+<label>Absence days:<label><br>
+<input type="text" id="holidays" readonly placeholder="Result"disabled><br><br>
+<label for="holiday">Type:</label>
+<select id="typeOf" onchange="b()">
+  <option value="#">Holidays</option>
+  <option value="#">Leave on demand</option>
+</select> <br>
+<input type="text" name="type" id="type" readonly placeholder="Choose type of leave"><br><br>
+<label>Status:<label>
+<select id="accept" onchange="c()">
+  <option value="#">Choose</option>
+  <option value="#">Accepted</option>
+  <option value="#">Not accepted</option>
+</select> <br>
+<input type="text" id="status" value="Status"disabled><br><br>
+<button type="button"  onclick="itemRemove()">Remove</button>
+<button type="button"  onclick="holidayRequest()">Rewrite</button>
+<button type="reset" value="Reset" >Reset</button><br><br>
+</form>
+</fieldset>
+</div>
+
+<div id="filter" >
+<fieldset id="filterData">
+<legend>Filter</legend>
+<form>
+  <select id = "sfilter"onchange="myFunction()">
+  <option>--Choose option--</option>
+  <option id="1">Name</option>
+  <option id="2">Status</option>
+  </select>
+	<select id="sfilter2" >
+		<option id="1">To accept</option>
+		<option id="2">Accepted</option>
+		<option id="3">Not accepted</option>
+	</select>
+
+<input type="text" id="filtr"><br><br>  
+<button type="button"  onclick="filter()">Filter</button>
+</form>
+</fieldset>
+</div>
+
+<div id="userData" >
+<fieldset id="usersData">
+<legend>Users data</legend>
+  <table id="table1" cellspacing="1" cellpadding="5" border="1">   
+      <tr>
+	    <th>User</th>
+		<th>Date of request / confirm</th>
+        <th>Start date</th>
+        <th>End date</th>
+        <th>Working days</th>
+        <th>Holidays days</th>
+		<th>Type of leave</th>
+		<th>Status</th>
+      </tr>  
+  </table>
+</fieldset>
+</div>
+
+<footer>
+        <p>© 2023 Company Name</p>
+ </footer>
+</body>
+</html>
